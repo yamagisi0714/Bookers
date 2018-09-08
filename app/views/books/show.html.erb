@@ -1,0 +1,10 @@
+<div class="show">
+	<div class="messeage">
+		<% if flash[:notice] %>
+	  	<p><%= flash[:notice] %></p>
+		<% end %>
+	</div>
+	<p><storong>Title:</storong><%= @book.title %></p>
+	<p><storong>Body:</storong><%= @book.body %></p>
+	<%= link_to "Edit", edit_book_path(@book), :style=>"color:black;" %> | <%= link_to "Back", books_path, :style=>"color:black;" %>
+</div>
