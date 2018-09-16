@@ -6,5 +6,5 @@
 	</div>
 	<p><storong>Title:</storong><%= @book.title %></p>
 	<p><storong>Body:</storong><%= @book.body %></p>
-	<%= link_to "Edit", edit_book_path(@book), :style=>"color:black;" %> | <%= link_to "Back", books_path, :style=>"color:black;" %>
+	<%= link_to "Edit", edit_book_path(@book), class: "edit_#{@book.id}", :style=>"color:black;" %> | <%= link_to "Back", books_path, class: "back", :style=>"color:black;" %>
 </div>

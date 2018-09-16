@@ -8,5 +8,5 @@
 	<h4></h4>
 	<%= f.submit 'Update Book' %>
 <% end %>
-<%= link_to "Show", book_path(params[:id]), :style=>"color:black;" %> | <%= link_to "Back", books_path, :style=>"color:black;" %>
+<%= link_to "Show", book_path(@book), class: "show_#{@book}", :style=>"color:black;" %> | <%= link_to "Back", books_path, class: "back", :style=>"color:black;" %>
 </div>
